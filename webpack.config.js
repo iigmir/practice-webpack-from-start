@@ -3,7 +3,6 @@ const path = require("path");
 
 const htmlPlugin = new HtmlWebpackPlugin({
     template: "src/index.html",
-    inject: false
 });
 
 module.exports = {
