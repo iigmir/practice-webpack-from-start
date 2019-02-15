@@ -1,7 +1,7 @@
 {
-  "name": "do-webpack-from-start",
+  "name": "practice-webpack-from-start",
   "version": "1.0.0",
-  "description": "",
+  "description": "A little project to how webpack works",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
