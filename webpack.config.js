@@ -1,11 +1,16 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+
+const htmlPlugin = new HtmlWebpackPlugin({
+    template: "src/index.html",
+    inject: false
+});
 
 module.exports = {
     mode: "production",
     entry: "./src/index.js",
     output: {
         filename: "main.js",
-        filename: "bundle.js",
         path: path.resolve(__dirname, "docs")
     },
     module: {
@@ -23,5 +28,6 @@ module.exports = {
                 "sass-loader"
             ]
         }]
-    }
+    },
+    plugins: [ htmlPlugin ]
 };
