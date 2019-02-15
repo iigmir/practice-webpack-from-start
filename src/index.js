@@ -3,7 +3,6 @@ import "./index.scss";
 function main()
 {
     let app = document.querySelector("#app");
-    let message  = "I am who I am.";
     let append_title = () =>
     {
         let dom = document.createElement("h2");
